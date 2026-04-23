@@ -1,0 +1,35 @@
+{
+  "name": "@autolearn/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "create-admin": "tsx src/cli/create-admin.ts",
+    "migrate": "tsx src/cli/migrate.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src test"
+  },
+  "dependencies": {
+    "@autolearn/contracts": "workspace:*",
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/secure-session": "^8.2.0",
+    "fastify": "^5.6.0",
+    "fastify-plugin": "^5.0.1",
+    "pg": "^8.16.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^24.3.0",
+    "@types/pg": "^8.15.5",
+    "eslint": "^9.34.0",
+    "globals": "^17.5.0",
+    "pg-mem": "^3.0.5",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.58.2",
+    "vitest": "^3.2.4"
+  }
+}

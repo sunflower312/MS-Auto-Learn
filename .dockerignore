@@ -1,0 +1,10 @@
+.git
+node_modules
+dist
+build
+coverage
+debug_artifacts
+__pycache__
+*.py[cod]
+apps/web/playwright-report
+apps/web/test-results
